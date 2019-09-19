@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+  publish="frontend-assessment/build"
+  base = "frontend-assessment/"
+
+[[redirects]]
+    from = "/*"
+    to = "/index.html"
+    status = 200

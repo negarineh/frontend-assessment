@@ -1,0 +1,146 @@
+// Variables
+$color-text: white;
+$border-radius: 5px;
+$text-align: center;
+$font-size: 12px;
+$title-font-size: 20px;
+
+.Frame{
+    border-radius: $border-radius;
+    padding: 10px;
+    width: 28.5%;
+    box-shadow: 0 0 6px rgb(206, 206, 206);
+    margin: 0 auto;
+    position: relative;
+    transition: all 0.4s ease;
+}
+.FrameTransition {
+    background-color: rgba(58, 1, 132, 0.44);
+    transition: all 0.4s ease-in-out;
+}
+.Frame:hover {
+    transform: scale(1.01);
+    transition: all 0.4s ease;
+}
+.Image{
+    width: 100%;
+    border-radius: $border-radius;
+    }
+.Title {
+    font-size: $title-font-size;
+    text-align: $text-align;
+}
+.TitleTransition {
+    font-size: 15px;
+}
+.Content{
+    display: block;
+    font-weight: 100;
+    font-size: $font-size;
+    transform: scaleY(1);
+    transition: transform 1.26s ease;
+    height: 50px;
+    background: -webkit-linear-gradient(#333, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.ContentContainer {
+    margin: 0 0 45px 0;
+    padding: 0;
+}
+
+.ContentTransition {
+    // transition
+    display: block;
+    font-weight: 100;
+    font-size: $font-size;
+    line-height: 1.7;
+    font-family: sans-serif;
+
+    transform: scaleY(1.1);
+    transition: transform 1.26s ease;
+}
+
+.Button{
+    border: solid 1.5px grey;
+    border-radius: 40px;
+    padding: 5px 10px;
+    height: auto;
+
+    font-feature-settings: "pcap", "c2pc";
+    font-variant: all-petite-caps;
+
+    transition: all 1s;
+}
+
+.Button:focus {
+    outline: 0;
+}
+
+.ButtonContainer {
+    width: 95%;
+    margin: auto;
+    text-align: $text-align;
+    bottom: 10px;
+    left: 5px;
+    position: absolute;
+}
+
+.Button:link,
+.Button:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .9s;
+    position: absolute;
+}
+
+.Button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    transition: 0.5s;
+}
+
+.Button:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.ButtonWhite {
+    background-color: #fff;
+    color: #777;
+}
+
+.Button::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 1s;
+}
+
+.ButtonWhite::after {
+    background-color: #fff;
+}
+
+.Button:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0.2;
+}
+
+@media (max-width: 600px) {
+    .Frame {
+        width: 95%;
+        margin-bottom: 25px;
+        margin-left: 0;
+    }
+}
+

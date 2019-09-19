@@ -1,40 +1,51 @@
-Introduction
----
-Thanks for taking the time to complete this frontend technical assessment. We will be focusing on software quality (scalability, readability, maintainability, etc.) and your eye for detail. You may include any libraries. Bonus points if SASS/LESS is used and jQuery is not used.
+MindArc Frontend Assessment https://www.mindarc.com.au/
 
-Exercise 1
----
-Build a responsive page based on the designs.
+## Steps to run
 
-##### Requirements
-1. Match the designs exactly.
-2. Needs to be responsive.
+1. You’ll need to have Node 8.16.0 or Node 10.16.0 or later version on your local development machine<br>
+    https://nodejs.org/en/
+    
+2. In the project directory, you can run:<br>
 
-##### Designs
-* exercise1-desktop.png
-* exercise1-mobile.png
+    ### `$ npm install`
+    ###### It will install all required dependencies.
 
-##### Assets
-* Desktop banner - http://via.placeholder.com/1920x650
-* Mobile banner - http://via.placeholder.com/600x600
-* Content images - http://via.placeholder.com/400x300
+3. Now in the project directory, you can run:
 
-Exercise 2
----
-Read the `data.json` file and display the data as tabs on desktop and an accordion on mobile.
+    ### `$ npm start`
 
-##### Requirements
-1. Display data in tabs on desktop.
-2. Display data in an accordion on mobile.
-3. Only 1 accordion/tab should be open at a time.
-4. Open the first accordion/tab on load.
-5. If the open accordion is selected, close it.
+    It runs the app in the development mode.<br>
+    Ready to go! <br>
+    Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-###### Bonus points
-* Improve the user experience with meaningful animations/transitions.
-* Design and styling.
-* Explain why the result of `('b' + 'a' + + 'a' + 'a').toLowerCase()` is `banana`.
+4.    ### `$ npm run test`
 
-Submission
----
-We recommend submitting your completed assessment as a forked repository. Please replace README content with instructions and relevant documentation.
+      Launches the test runner in the interactive watch mode.<br><hr>
+
+
+##### Why the result of ('b' + 'a' + + 'a' + 'a').toLowerCase() is banana?
+.toLowerCase function only exists on strings. `+'a'` resolves to NaN ("Not a Number") because it force a string to a number
+(as s using `+` before any value in JavaScript will convert that value to a number), 
+and here  `line3` the character `a` cannot be parsed as a number. So we have `baNaN`.
+It will concatenate `a` to `baNaN` and at the with applying `.toLowerCase` we have `banana`.
+
+
+```
+
+> 'b' 
+"b" 
+    
+> 'b' + 'a' 
+"ba"
+
+// *** line3 *** 
+>'b' + 'a' + + 'a' 
+"baNaN" 
+
+>'b' + 'a' + + 'a' + 'a' 
+"baNaNa" 
+
+>('b' + 'a' + + 'a' + 'a').toLowerCase() 
+"banana"
+
+```
