@@ -12,7 +12,7 @@
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(http://via.placeholder.com/1920x650)center;
   background-size: cover;
   height: 100vh;
-
+  box-sizing: border-box;
 }
 .Header {
   position: absolute;
@@ -27,6 +27,7 @@
 }
 .BottomRow{
   margin: 0 200px 0 200px;
+  box-sizing: border-box;
 }
 .AppHeader {
   text-transform: uppercase;

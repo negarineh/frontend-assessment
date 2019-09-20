@@ -69,8 +69,8 @@ class Tabs extends Component {
                         }
 
                         {item.isOpen ?
-                            <div className={styles.ContentTransition}>{item.content}</div> :
-                            <div className={styles.Content}>{item.content}</div>
+                            <div className={styles.ContentTransition} dangerouslySetInnerHTML={{__html: item.content}}></div> :
+                            <div className={styles.Content} dangerouslySetInnerHTML={{__html: item.content}}></div>
                         }
                     </div>
                     <div className={styles.ButtonContainer}>
