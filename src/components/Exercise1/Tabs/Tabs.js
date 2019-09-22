@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import data from '../../assets/data/data.json';
+import data from '../../../assets/data/data.json';
 import * as styles from "./Tabs.module.scss";
-import {IMAGES} from "../../assets/images/images";
+import {IMAGES} from "../../../assets/images/images";
 
 class Tabs extends Component {
     state = {
@@ -63,10 +63,6 @@ class Tabs extends Component {
                 <div key={index} className={styles.Frame}>
                     <div className={styles.ContentContainer}>
                         <img className={styles.Image} src={IMAGES.ContentImages} alt={IMAGES.ContentImages} />
-                        {item.isOpen ?
-                            <h4 className={styles.TitleTransition}>{item.title}</h4> :
-                            <h4 className={styles.Title}>{item.title}</h4>
-                        }
 
                         {item.isOpen ?
                             <div className={styles.ContentTransition} dangerouslySetInnerHTML={{__html: item.content}}></div> :

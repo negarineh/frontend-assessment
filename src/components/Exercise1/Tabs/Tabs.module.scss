@@ -8,7 +8,7 @@ $title-font-size: 20px;
 .Frame{
     border-radius: $border-radius;
     padding: 10px;
-    width: 28.5%;
+    width: 32.5%;
     box-shadow: 0 0 6px rgb(206, 206, 206);
     margin: 0 auto;
     position: relative;
@@ -41,6 +41,7 @@ $title-font-size: 20px;
     transform: scaleY(1);
     transition: transform 1.26s ease;
     height: 50px;
+    margin: 12px;
     background: -webkit-linear-gradient(#333, #ffffff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -58,6 +59,7 @@ $title-font-size: 20px;
     font-size: $font-size;
     line-height: 1.7;
     font-family: sans-serif;
+    margin: 12px;
 
     transform: scaleY(1.1);
     transition: transform 1.26s ease;
@@ -66,7 +68,6 @@ $title-font-size: 20px;
 .Button{
     border: solid 1.5px grey;
     border-radius: 40px;
-    padding: 5px 10px;
     height: auto;
 
     font-feature-settings: "pcap", "c2pc";

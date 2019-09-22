@@ -1,0 +1,57 @@
+// Variables
+ $color-bg: rgb(143, 143, 143);
+ $color-text: white;
+ $text-align: center;
+
+.App {
+  text-align: $text-align;
+  margin: 0;
+}
+
+.TopRow{
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(http://via.placeholder.com/1920x650)center;
+  background-size: cover;
+  height: 100vh;
+  box-sizing: border-box;
+}
+.Header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: $text-align;
+}
+.Img {
+  width: 100%;
+}
+.BottomRow{
+  margin: 0 200px 0 200px;
+  box-sizing: border-box;
+}
+.AppHeader {
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 3rem;
+}
+.AppText {
+  margin: 0;
+  font-size: 1.3rem;
+}
+.TabsContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em;
+}
+@media (max-width: 600px) {
+  .TabsContainer {
+      display: block;
+      width: 90%;
+  }
+  .TopRow {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(http://via.placeholder.com/600x600)center;
+  }
+  .BottomRow {
+      margin: 0;
+  }
+}
