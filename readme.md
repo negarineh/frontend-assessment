@@ -1,7 +1,7 @@
 MindArc Frontend Assessment https://www.mindarc.com.au/ <br>
 
 
-Demo: https://confident-jones-5d5913.netlify.com/
+Demo: https://loving-mahavira-aa657d.netlify.com/
 ###### Deployed on Netlify.
 
 ## Steps to run
