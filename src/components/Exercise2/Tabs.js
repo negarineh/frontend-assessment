@@ -39,7 +39,7 @@ class DropdownMenu extends Component {
             </Tabs>
         );
         const accordion = (
-            <Accordion defaultActiveKey="0">
+            <Accordion defaultActiveKey={0}>
                 {data.map((item, index) => {
                     return (
                         <Card key={index}>
