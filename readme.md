@@ -1,6 +1,3 @@
-MindArc Frontend Assessment https://www.mindarc.com.au/ <br>
-
-
 Demo: https://loving-mahavira-aa657d.netlify.com/
 ###### Deployed on Netlify.
 
